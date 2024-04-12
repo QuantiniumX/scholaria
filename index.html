@@ -1,12 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Scholaria</title>
     <link rel="stylesheet" href="output.css">
 </head>
-<body>
-    
+
+<body class="m-0 p-0 box-border bg-amber-50 flex flex-col">
+    <header class="header flex justify-between fixed border-b-black border-2 p-2 pb-3 w-[100%] bg-amber-50 z-10">
+        <div class="website-name flex justify-between ">
+            <img src="./images/menu.png" alt="menu" class="menu h-10 ml-4 mr-2 border-black border-2 rounded-md">
+            <img src="./images/website-logo.png" alt="website-logo"
+                class="website-logo h-10 ml-4 mr-2 border-black border-2 rounded-full">
+            <a href="../home/index.html" class="flex items-center"><span
+                    class=" website-name px-2 text-xl pt-1">Scholaria</span></a>
+        </div>
+        <div class="search-bar relative">
+            <input type="text" class="search border-black rounded-l-lg border-2 p-1 pl-4 pr-48" placeholder="Search...">
+            <button
+                class="search-button flex-row self-center border-2 border-black rounded-r-lg px-2 pt-1.5 pb-2 ml-[-5px] relative top-[2px] bg-amber-100"><img
+                    src="./images/search-logo.png" alt="search-button" class="search-img h-[18px]"></button>
+        </div>
+        <div class="header-right flex  justify-between">
+            <img src="./images/notification.png" alt="notification"
+                class="notification h-10 mr-2 border-2 border-black p-2 rounded-full">
+            <img src="./images//user-logo.png" alt="user-logo"
+                class="user-logo h-10 ml-2 border-2 border-black rounded-full">
+        </div>
+    </header>
+
+
+    <nav
+        class="navbar flex-col top-0 left-0 fixed w-[300px] p-2 border-r-black border-2 h-full transform translate-x-full transition-transform duration-300 hidden ease-in-out z-20 ml-[-300px]">
+        <div class="top-navbar flex justify-between mb-4 border-2 border-b-black pb-3">
+            <div class="website-name flex justify-between ">
+                <img src="./images/website-logo.png" alt="website-logo"
+                    class="website-logo h-10 ml-4 mr-2 border-black border-2 rounded-full cursor-pointer">
+                <span class="website-name px-2 text-xl cursor-pointer pt-1">Scholaria</span>
+            </div>
+            <span
+                class="close-button px-2 text-xl border-black border-2 mr-4 rounded-md cursor-pointer hover:bg-amber-100 pt-0.5">X</span>
+        </div>
+        <div class="navbar-content flex flex-col ml-2">
+            <a href="../home/index.html">
+                <button
+                    class="home pl-2 border-black border-2 w-[98%] mb-1 text-left hover:bg-amber-100 flex items-start"><img
+                        src="../images/home.png" alt="home" class="home h-4 mt-0.5 "><span>Home</span></button>
+            </a>
+            <a href="../resources/index.html">
+                <button
+                    class="study-material pl-2 border-black border-2 w-[98%] mb-1 text-left hover:bg-amber-100 flex items-start"><img
+                        src="../images/resources.png" alt="Resources "
+                        class="resources h-4 mt-0.5"><span>Resources</button>
+            </a>
+            <a href="../notes/index.html">
+                <button
+                    class="notes pl-2 border-black border-2 w-[98%] mb-1 text-left hover:bg-amber-100 flex  items-start"><img
+                        src="./images/notes.png" alt="notes" class="notes h-4 mt-0.5">Notes</button>
+            </a>
+
+            <a href="../todo-list/index.html">
+                <button
+                    class="todo-list pl-2 border-black border-2 w-[98%] mb-1 text-left hover:bg-amber-100 flex  items-start"><img
+                        src="../images/todo-list.png" alt="todo-list" class="todo-list h-4 mt-0.5">Todo-List</button>
+            </a>
+            <a href="../doubts/index.html">
+                <button
+                    class="doubts pl-2 border-black border-2 w-[98%] mb-1 text-left hover:bg-amber-100 flex  items-start"><img
+                        src="../images/doubts.png" alt="doubts" class="doubts h-4 mt-0.5">Doubts</button>
+            </a>
+            <a href="../projects/index.html">
+                <button
+                    class="projects pl-2 border-black border-2 w-[98%] mb-1 text-left hover:bg-amber-100 flex  items-start"><img
+                        src="../images/projects.png" alt="projects" class="projects h-4 mt-0.5">Projects</button>
+            </a>
+            <a href="../events/index.html">
+                <button
+                    class="projects pl-2 border-black border-2 w-[98%] mb-1 text-left hover:bg-amber-100 flex  items-start"><img
+                        src="../images/events.png" alt="events" class="events h-4 mt-0.5">Events</button>
+            </a>
+        </div>
+        <footer class="navbar-footer fixed bottom-2 left-2">&copy 2024 Scholaria</footer>
+    </nav>
+
+    <div class="mt-24 ">
+        <main class="main-content flex ">
+            <div class="main-middle border-black border-2 w-4/5 h-full">
+                <div class="home-top flex justify-between items-center">
+                    <h2 class="font-bold">Home</h2>
+                    <button claas=""><img src="./images/triangle-menu.png" alt="filter" class="bg-amber-100"><span
+                            class="counter">8</span></button>
+                </div>
+                <div class="home-blocks">
+                </div>
+            </div>
+            <div class="main-right border-black border-2 w-1/5 h-full">
+                <div class="main-right-top border-black border-2 h-[50%]">
+                    <h2 class=> Todo-List </h2>
+
+                </div>
+                <div class="main-right-bottom border-black border-2 h-[50%]"></div>
+            </div>
+        </main>
+    </div>
+
+    <!--Background-Blur-->
+    <div id="blur-background"
+        class="z-10 fixed top-0 left-0 w-full h-full bg-amber-50 bg-opacity-50 backdrop-filter backdrop-blur-lg hidden">
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
